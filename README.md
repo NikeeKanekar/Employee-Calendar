@@ -1,6 +1,6 @@
 # Employee-Calendar
 
-Build a web application for managing the holiday calendar and time off requests for employees.
+Web application for managing the holiday calendar and time off requests for employees.
 
 a) GET - <base-url>/timeoff/query
 
