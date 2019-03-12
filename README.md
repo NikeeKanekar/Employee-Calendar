@@ -29,7 +29,7 @@ Given an employee id, this list all the time-offs (both past, current and future
 
 Ex: http://localhost:8080/timeoff/list?employee_id=103
 
-Database Specifications:
+## Database Specifications:
 
 For this application, I have used MongoDB, the NoSQL database.
 
@@ -51,14 +51,14 @@ Example: An employee record with employee_id = 101
 
 I have also attached the json file(EmployeeDB.json) containing the final database content after performing the Junit tests.
 
-Application Specifications:
+## Application Specifications:
 
 i.	Each employee has an initial time off balance of 15 days, hence 120 hours.
 ii.	For calculating the total requested time off hours, weekends are considered, but public holidays are not considered.
 iii.	The time off hours can range between 9 AM and 5 PM. Hence, the start time can at least be 9:00 and end time can max be 17:00, since it’s a 24-hour format.
 iv.	In case, a time off request overlaps with existing time off, an error message is displayed.
 
-Source Code Files:
+## Source Code Files:
 
 1.	Application.java – This file contains the main function to run the application.
 2.	EmployeeController.java – This file contains the implementation of all REST end points.
