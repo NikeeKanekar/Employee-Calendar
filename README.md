@@ -33,8 +33,8 @@ Ex: http://localhost:8080/timeoff/list?employee_id=103
 
 For this application, I have used MongoDB, the NoSQL database.
 
-1.	Create a database with the name EmployeeDB using the command: Use EmployeeDB
-2.	Create a collection with the name EmployeeCollection: db.createCollection(“EmployeeCollection”)
+1.	Create a database with the name EmployeeDB using the command: > Use EmployeeDB
+2.	Create a collection with the name EmployeeCollection: > db.createCollection(“EmployeeCollection”)
 
 Each employee data is stored as a document consisting of following key value pairs: 
 
