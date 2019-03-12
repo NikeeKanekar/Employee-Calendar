@@ -33,17 +33,17 @@ Ex: http://localhost:8080/timeoff/list?employee_id=103
 
 For this application, I have used MongoDB, the NoSQL database.
 
-i.	Create a database with the name EmployeeDB using the command: Use EmployeeDB
-ii.	Create a collection with the name EmployeeCollection: db.createCollection(“EmployeeCollection”)
+1.	Create a database with the name EmployeeDB using the command: Use EmployeeDB
+2.	Create a collection with the name EmployeeCollection: db.createCollection(“EmployeeCollection”)
 
 Each employee data is stored as a document consisting of following key value pairs: 
 
-I.	id: default unique id
-II.	employee_id: int
-III.	timeoff: ArrayList<Document>; where Document has the key value pairs
-      i.	start: Date
-      ii.	end: Date
-IV.	balance: int
+1.	id: default unique id
+2.	employee_id: int
+3.	timeoff: ArrayList<Document>; where Document has the key value pairs
+      - start: Date
+      - end: Date
+4.	balance: int
 
 Example: An employee record with employee_id = 101
 
@@ -53,10 +53,10 @@ I have also attached the json file(EmployeeDB.json) containing the final databas
 
 ## Application Specifications:
 
-i.	Each employee has an initial time off balance of 15 days, hence 120 hours.
-ii.	For calculating the total requested time off hours, weekends are considered, but public holidays are not considered.
-iii.	The time off hours can range between 9 AM and 5 PM. Hence, the start time can at least be 9:00 and end time can max be 17:00, since it’s a 24-hour format.
-iv.	In case, a time off request overlaps with existing time off, an error message is displayed.
+1.	Each employee has an initial time off balance of 15 days, hence 120 hours.
+2.	For calculating the total requested time off hours, weekends are considered, but public holidays are not considered.
+3.	The time off hours can range between 9 AM and 5 PM. Hence, the start time can at least be 9:00 and end time can max be 17:00,           since it’s a 24-hour format.
+4.	In case, a time off request overlaps with existing time off, an error message is displayed.
 
 ## Source Code Files:
 
