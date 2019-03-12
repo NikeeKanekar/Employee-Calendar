@@ -15,9 +15,9 @@ Given an employee id and hours requested, this checks the remaining time off hou
 Ex: http://localhost:8080/timeoff/request
 
 The employee id and hours requested are sent through a request body, that is an object of Employee class. The Employee class has following 3 instance properties:
-i.	int employee_id
-ii.	String start
-iii.	String end
+1.	int employee_id
+2.	String start
+3.	String end
 
 The two strings represent the start and end date respectively and are of the form “MM-dd-yyyy HH:mm”
 
@@ -33,8 +33,8 @@ Ex: http://localhost:8080/timeoff/list?employee_id=103
 
 For this application, I have used MongoDB, the NoSQL database.
 
-1.	Create a database with the name EmployeeDB using the command: > Use EmployeeDB
-2.	Create a collection with the name EmployeeCollection: > db.createCollection(“EmployeeCollection”)
+1.	Create a database with the name EmployeeDB using the command:  Use EmployeeDB
+2.	Create a collection with the name EmployeeCollection:  db.createCollection(“EmployeeCollection”)
 
 Each employee data is stored as a document consisting of following key value pairs: 
 
